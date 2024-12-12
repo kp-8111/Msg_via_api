@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+    <title>Messsage Genrator</title>
+    <link rel="icon"href="{% static 'images/skp.PNG'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{font-size: xx-large;font-family: monospace;}
+        h1{background-color: black;color: white;}
+    </style>
+    
+
+
+</head>
+<body>
+    <center>
+        <h1>Motivational Message Genrator</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <br/>
+            <input type="submit" value="GET MSG" name="btn"/>
+        </form>
+        <br/>
+        <h2>{{msg}}</h2>
+    </center>
+    
+</body>
+
+</html>
