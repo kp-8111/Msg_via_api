@@ -12,8 +12,8 @@ Requests: Python library for making HTTP requests to fetch data from the ZenQuot
 SQLite: Default database used for development.
 Installation
 Prerequisites
-Python 3.x
-Django 4.2.x
+Python 3.x installed.
+Django 4.2.x installed.
 Steps to Set Up Locally
 Clone the repository:
 
@@ -40,7 +40,7 @@ On macOS/Linux:
 bash
 Copy code
 source venv/bin/activate
-Install the dependencies:
+Install the dependencies: Make sure you have a requirements.txt file in the root directory. If not, you can create one manually.
 
 bash
 Copy code
@@ -55,7 +55,7 @@ Start the Django development server:
 bash
 Copy code
 python manage.py runserver
-Open your browser and go to http://127.0.0.1:8000/ to see the application in action.
+Access the application: Open your browser and go to http://127.0.0.1:8000/ to see the homepage with a random quote.
 
 Usage
 Visit the homepage to see a random quote fetched from the ZenQuotes API.
@@ -67,3 +67,4 @@ mpapp/: The Django app that contains the core functionality and views for the ho
 templates/: Folder containing HTML templates, including home.html.
 License
 MIT License - see LICENSE for details.
+
